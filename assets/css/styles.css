@@ -20,6 +20,15 @@
   --container-color: #FFF;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+  --color1:#3252A0;
+  --colorbuatfont: #ffff;
+  --colorbtn: #FFF;
+  --color3: #FFF;
+  --color4: #FFF;
+  --color5:#3252A0;
+  --color6: #FFF;
+
+
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
   --big-font-size: 2rem;
@@ -65,11 +74,20 @@ body.dark-theme {
   --first-color-second: hsl(var(--hue-color), 30%, 8%);
   --title-color: hsl(var(--hue-color), 8%, 95%);
   --text-color: hsl(var(--hue-color), 8%, 75%);
-  --input-color: hsl(var(--hue-color), 29%, 16%);
+  --input-color: hsl(var(--hue-color), 70%, 96%);
   --body-color: #121212;
   --container-color: hsl(var(--hue-color), 29%, 16%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+  --color1: #ffff;
+  --colorbuatfont: #121212;
+  --colorbtn: #121212;
+  --color3: #121212;
+  --color4: #ffff;
+  --color5:#121212;
+  --color6: #121212;
+
+
   
 }
 
@@ -254,7 +272,7 @@ img {
 
 /* Active link */
 .active-link {
-  color: var(--first-color);
+  color: var(--color1);
 }
 
 /* Change background header */
@@ -347,15 +365,15 @@ img {
 /*========== BUTTONS ==========*/
 .button {
   display: inline-block;
-  background-color: var(--first-color);
-  color: #FFF;
+  background-color: var(--color1);
+  color: var(--color3);
   padding: 1rem;
   border-radius: .5rem;
   font-weight: var(--font-medium);
 }
 
 .button:hover {
-  background-color: var(--first-color-alt);
+  background-color: var(--text-color-light);
 }
 
 .button__icon {
@@ -365,8 +383,8 @@ img {
 }
 
 .button--white {
-  background-color: #FFF;
-  color: var(--first-color);
+  background-color: var(--colorbtn);
+  color: var(--color1);
 }
 
 .button--white:hover {
@@ -385,7 +403,7 @@ img {
 .button--link {
   padding: 0;
   background-color: transparent;
-  color: var(--first-color);
+  color: var(--color5);
 }
 
 .button--link:hover {
@@ -636,9 +654,9 @@ img {
 
 .services__content {
   position: relative;
-  background-color: var(--container-color);
+  background-color: var(--color4);
   padding: 3.5rem .5rem 1.25rem 1.5rem;
-  border-radius: .25rem;
+  border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   transition: .3s;
   overflow: hidden;
@@ -651,12 +669,13 @@ img {
 .services__icon {
   display: block;
   font-size: 1.5rem;
-  color: var(--first-color);
+  color: var(--color5);
   margin-bottom: var(--mb-1);
 }
 
 .services__title {
   font-size: var(--h3-font-size);
+  color: #121212;
   margin-bottom: var(--mb-1);
   font-weight: var(--font-medium);
 }
@@ -690,7 +709,7 @@ img {
 
 .services__modal-content {
   position: relative;
-  background-color: var(--container-color);
+  background-color: var(--color6);
   padding: 1.5rem;
   border-radius: .5rem;
 }
@@ -719,7 +738,7 @@ img {
 }
 
 .services__modal-icon {
-  color: var(--first-color);
+  color: var(--color1);
   margin-right: var(--mb-0-25);
 }
 
@@ -795,7 +814,7 @@ img {
 }
 
 .project__bg {
-  background-color: var(--first-color-second);
+  background-color: var(--color1);
   padding-top: 3rem;
   padding-bottom: 3rem;
   border-radius: 20px;
@@ -811,7 +830,7 @@ img {
 }
 
 .project__title, .project__description {
-  color: #FFF;
+  color: var(--colorbuatfont);
 }
 
 .project__img {
@@ -870,7 +889,7 @@ img {
 
 .contact__icon {
   font-size: 2rem;
-  color: var(--first-color);
+  color: var(--color1);
   margin-right: var(--mb-0-75);
 }
 
@@ -892,7 +911,7 @@ img {
 
 .contact__label {
   font-size: var(--smaller-font-size);
-  color: var(--title-color);
+  color: #121212;
 }
 
 .contact__input {
@@ -964,7 +983,7 @@ img {
   position: fixed;
   right: 1rem;
   bottom: -20%;
-  background-color: var(--first-color);
+  background-color: var(--color1);
   opacity: .8;
   padding: 0 .3rem;
   border-radius: .4rem;
@@ -973,7 +992,7 @@ img {
 }
 
 .scrollup:hover {
-  background-color: var(--first-color-alt);
+  background-color: var(--color1);
 }
 
 .scrollup__icon {
@@ -1186,7 +1205,7 @@ img {
     background: none;
   }
   .project__container {
-    background-color: var(--first-color-second);
+    background-color: var(--color1);
     border-radius: 1rem;
     padding: 3rem 2.5rem 0;
     grid-template-columns: 1fr max-content;
@@ -1261,8 +1280,8 @@ img {
 button.btn {
   padding: 1rem;
   border-radius: .5rem;
-  color: #FFF;
-  background-color: var(--first-color);
+  color: var(--colorbuatfont);
+  background-color: var(--color1);
   margin-top: 15px;
   cursor: pointer;
   font-family: 'Poppins';
