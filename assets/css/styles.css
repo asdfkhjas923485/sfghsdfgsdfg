@@ -11,6 +11,8 @@
   --first-color: hsl(var(--hue-color), 69%, 61%);
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --btncover: #111;
+  --btntulis: #fff;
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
   --title-color: hsl(var(--hue-color), 8%, 15%);
   --text-color: hsl(var(--hue-color), 8%, 45%);
@@ -86,6 +88,8 @@ body.dark-theme {
   --color4: #ffff;
   --color5:#121212;
   --color6: #121212;
+  --btntulis: #111;
+  --btncover: #fff;
 
 
   
@@ -365,15 +369,21 @@ img {
 /*========== BUTTONS ==========*/
 .button {
   display: inline-block;
-  background-color: var(--color1);
-  color: var(--color3);
+  color: var(--btntulis);
+  background-color: var(--btncover);
   padding: 1rem;
   border-radius: .5rem;
   font-weight: var(--font-medium);
+  border-radius: .5rem;
+  border-style: inset;
+  font-family: 'Poppins';
+
 }
 
 .button:hover {
-  background-color: var(--text-color-light);
+  color: var(--btncover);
+  background-color: var(--btntulis);
+  font-family: 'Poppins';
 }
 
 .button__icon {
@@ -383,12 +393,14 @@ img {
 }
 
 .button--white {
-  background-color: var(--colorbtn);
-  color: var(--color1);
+  background-color: var(--btntulis);
+  color: var(--btncover);
 }
 
 .button--white:hover {
-  background-color: #FFF;
+  background-color:var(--btncover);
+  color: var(--btntulis);
+
 }
 
 .button--flex {
@@ -404,6 +416,7 @@ img {
   padding: 0;
   background-color: transparent;
   color: var(--color5);
+  border-style: none;
 }
 
 .button--link:hover {
@@ -725,7 +738,7 @@ img {
 .services__modal-title {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
-  margin-bottom: var(--mb-1-5);
+  margin-bottom: 5px;
 }
 
 .services__modal-close {
@@ -739,7 +752,6 @@ img {
 
 .services__modal-icon {
   color: var(--color1);
-  margin-right: var(--mb-0-25);
 }
 
 /* Active Modal */
@@ -814,7 +826,7 @@ img {
 }
 
 .project__bg {
-  background-color: var(--color1);
+  background-color: var(--btncover);
   padding-top: 3rem;
   padding-bottom: 3rem;
   border-radius: 20px;
@@ -889,7 +901,7 @@ img {
 
 .contact__icon {
   font-size: 2rem;
-  color: var(--color1);
+  color: var(--btncover);
   margin-right: var(--mb-0-75);
 }
 
@@ -983,7 +995,7 @@ img {
   position: fixed;
   right: 1rem;
   bottom: -20%;
-  background-color: var(--color1);
+  background-color: var(--btncover);
   opacity: .8;
   padding: 0 .3rem;
   border-radius: .4rem;
@@ -992,13 +1004,18 @@ img {
 }
 
 .scrollup:hover {
-  background-color: var(--color1);
+  background-color: var(--btntulis);
 }
 
 .scrollup__icon {
   font-size: 1.5rem;
-  color: #FFF;
+  color: var(--btntulis);
 }
+.scrollup__icon:hover {
+  font-size: 1.5rem;
+  color: var(--btncover);
+}
+
 
 /* Show scroll */
 .show-scroll {
@@ -1205,7 +1222,7 @@ img {
     background: none;
   }
   .project__container {
-    background-color: var(--color1);
+    background-color: var(--btncover);
     border-radius: 1rem;
     padding: 3rem 2.5rem 0;
     grid-template-columns: 1fr max-content;
@@ -1280,12 +1297,17 @@ img {
 button.btn {
   padding: 1rem;
   border-radius: .5rem;
-  color: var(--colorbuatfont);
-  background-color: var(--color1);
+  color: var(--btntulis);
+  background-color: var(--btncover);
   margin-top: 15px;
   cursor: pointer;
   font-family: 'Poppins';
 }
 button.btn:hover{
-  background-color: var(--first-color-alt);
+  color: var(--btncover);
+  font-family: 'Poppins';
+
+
+  background-color: var(--btntulis);
 }
+

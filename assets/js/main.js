@@ -213,3 +213,21 @@ function sendMail() {
     .catch(err=>console.log(err));
 
 }
+
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+})
+
+
+
+sr.reveal(`.section__title, .about__img, .subscribe__container, .footer__container`)
+sr.reveal(`.home__description, .footer__info`, {delay: 500})
+sr.reveal(`.home__search`, {delay: 600})
+sr.reveal(`.home__value`, {delay: 700})
+sr.reveal(`.home__images`, {delay: 800, origin: 'bottom'})
+sr.reveal(`.logos__img`, {interval: 100})
+sr.reveal(`.value__images, .contact__content`, {origin: 'left'})
+sr.reveal(`.value__content, .contact__images`, {origin: 'right'})
